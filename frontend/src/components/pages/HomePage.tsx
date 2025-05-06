@@ -1,5 +1,5 @@
 import Carousel from '../organisms/carousel';
-export function Home() {
+export function HomePage() {
 	return (
 		<>
 			<Carousel />
