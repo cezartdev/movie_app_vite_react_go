@@ -1,0 +1,30 @@
+{
+    "name": "movie_app_vite_react_go",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "turbo run dev",
+        "build": "turbo run build",
+        "check": "pnpm biome check --write frontend",
+        "front:dev": "turbo run dev --filter=./apps/frontend/**/*",
+        "serv:dev": "turbo run dev --filter=./apps/services/**/*",
+        "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && rm -rf pnpm-lock.yaml && pnpm i"
+    },
+    "keywords": [],
+    "author": "César Salazar",
+    "license": "ISC",
+    "packageManager": "pnpm@10.10.0",
+    "pnpm": {
+        "overrides": {
+            "globals": "^16.0.0"
+        },
+        "onlyBuiltDependencies": [
+            "@biomejs/biome",
+            "esbuild"
+        ]
+    },
+    "devDependencies": {
+        "turbo": "^2.5.2"
+    }
+}

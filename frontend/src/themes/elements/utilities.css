@@ -1,0 +1,43 @@
+/*Container Overwritten*/
+@utility container {
+    @apply !w-[90%] mx-auto !max-w-[72rem];
+}
+
+/*Text*/
+@utility title-1 {
+    @apply text-5xl sm:text-6xl font-black capitalize leading-20;
+}
+@utility title-2 {
+    @apply text-3xl font-black;
+}
+@utility subtitle-1 {
+    @apply text-2xl font-bold;
+}
+@utility subtitle-2 {
+    @apply text-base font-semibold;
+}
+@utility paragraph-1 {
+    @apply text-sm font-normal;
+}
+@utility paragraph-2 {
+    @apply text-xs font-normal;
+}
+
+/*Sections*/
+@utility section-1 {
+    @apply flex flex-col gap-40;
+}
+@utility section-2 {
+    @apply flex flex-col gap-20;
+}
+@utility section-3 {
+    @apply flex flex-col gap-10;
+}
+@utility section-4 {
+    @apply flex flex-col gap-5;
+}
+
+/*Grid*/
+@utility grid-fluid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-20 gap-y-20;
+}

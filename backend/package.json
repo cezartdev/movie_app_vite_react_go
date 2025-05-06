@@ -1,0 +1,10 @@
+{
+    "name": "backend",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "cross-env GOMODCACHE=C:/go-cache GOCACHE=C:/go-cache air .",
+        "build": "cross-env GOMODCACHE=C:/go-cache GOCACHE=C:/go-cache go build .",
+        "check": "go fmt ."
+    }
+}
