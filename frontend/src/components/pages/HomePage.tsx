@@ -1,8 +1,4 @@
-import Carousel from '../organisms/carousel';
+import HomeTemplate from '../templates/HomeTemplate';
 export function HomePage() {
-	return (
-		<>
-			<Carousel />
-		</>
-	);
+	return <HomeTemplate />;
 }

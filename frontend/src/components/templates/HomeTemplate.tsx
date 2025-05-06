@@ -1,7 +1,11 @@
+import Carousel from '../organisms/Carousel';
+
 export default function HomeTemplate() {
-    return (
-        <>
-            <h1>HomeTemplate</h1>
-        </>
-    );
+	return (
+		<>
+			<div>
+				<Carousel />
+			</div>
+		</>
+	);
 }

@@ -1,6 +1,6 @@
-import SideBar from '../organisms/SideBar';
-import NavBar from '../organisms/NavBar';
 import { Outlet } from 'react-router';
+import NavBar from '../organisms/NavBar';
+import SideBar from '../organisms/SideBar';
 
 export function AppTemplate() {
 	return (
