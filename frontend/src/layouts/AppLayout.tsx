@@ -11,7 +11,7 @@ export function AppLayout() {
 		<>
 			<div className='flex h-screen'>
 				{/* Sidebar */}
-				<section className='h-screen overflow-y-auto w-56 flex flex-col bg-base-200'>
+				<section className='h-screen overflow-y-auto w-56 flex flex-col bg-base-100'>
 					<ul className='menu size-full'>
 						<a href='/'>
 							<h2 className='menu-title subtitle-1 text-center'>
@@ -74,7 +74,7 @@ export function AppLayout() {
 					{/* User NavBar */}
 					<nav className='navbar bg-base-100 shadow-sm'>
 						<div className='flex-1'>
-							<p className='text-xl'>Title</p>
+							<p className='text-xl font-bold'>Home</p>
 						</div>
 						<div className='flex-none'>
 							<div className='dropdown dropdown-end'>
@@ -89,7 +89,7 @@ export function AppLayout() {
 										/>
 									</div>
 								</button>
-								<ul className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow'>
+								<ul className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow border-1'>
 									<li>
 										<a
 											href='/#'
