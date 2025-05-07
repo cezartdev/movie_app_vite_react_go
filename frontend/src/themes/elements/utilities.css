@@ -5,7 +5,7 @@
 
 /*Text*/
 @utility title-1 {
-    @apply text-5xl sm:text-6xl font-black capitalize leading-20;
+    @apply text-6xl font-black capitalize leading-20;
 }
 @utility title-2 {
     @apply text-3xl font-black;

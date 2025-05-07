@@ -6,27 +6,28 @@ import {
 } from 'lucide-react';
 
 import { Link } from 'react-router';
-
+import PopCornSvg from '../../assets/svg/popcorn.svg?react';
 export default function SideBar() {
 	return (
-		<section className='h-screen overflow-y-auto w-56 flex flex-col bg-base-100'>
-			<ul className='menu size-full'>
-				<Link to='/'>
-					<h2 className='menu-title subtitle-1 text-center'>
+		<section className='h-screen overflow-y-auto w-20 lg:w-56 flex flex-col bg-base-100 transition-all duration-300'>
+			<ul className='menu size-full gap-4'>
+				<Link to='/' className='flex flex-col items-center'>
+					<PopCornSvg className='w-10' />
+					<h1 className='menu-title subtitle-1 text-center hidden lg:block'>
 						Movies App
-					</h2>
+					</h1>
 				</Link>
 				<li>
 					<Link to='/#'>
 						<Home />
-						<p>Home</p>
+						<p className='hidden lg:block'>Home</p>
 					</Link>
 				</li>
 				<li>
 					<details>
 						<summary>
 							<BookOpenText />
-							<p>Categories</p>
+							<p className='hidden lg:block'>Categories</p>
 						</summary>
 						<ul>
 							<li>
@@ -36,7 +37,7 @@ export default function SideBar() {
 								<Link to='/#'>Submenu 2</Link>
 							</li>
 							<li>
-								<details open>
+								<details>
 									<summary>Parent</summary>
 									<ul>
 										<li>
@@ -54,7 +55,7 @@ export default function SideBar() {
 				<li>
 					<Link to='/#'>
 						<Bookmark />
-						<p>Saved</p>
+						<p className='hidden lg:block'>Saved</p>
 					</Link>
 				</li>
 			</ul>
@@ -62,7 +63,7 @@ export default function SideBar() {
 				<li>
 					<Link to='/#'>
 						<Settings />
-						<p>Settings</p>
+						<p className='hidden lg:block'>Settings</p>
 					</Link>
 				</li>
 			</ul>

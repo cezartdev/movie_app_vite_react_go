@@ -17,15 +17,9 @@ export default function Carousel() {
 					className='w-full'
 					alt='imagen'
 				/>
-				<div className='absolute top-1/2 left-1/2  md:left-5/12 lg:left-4/12 xl:left-3/12 transform -translate-x-1/2 -translate-y-1/2 z-10 '>
+				<div className='absolute top-1/2 left-1/2 md:left-5/12 lg:left-4/12 xl:left-3/12 transform -translate-x-1/2 -translate-y-1/2 z-10'>
 					<div className='flex flex-col max-w-100 gap-8'>
-						<p className='text-xl'>
-							May, 17 Action, Super heroes
-						</p>
-
-						<p className=' text-6xl font-black'>
-							Avengers Endgame
-						</p>
+						<h3 className='title-1'>Avengers Endgame</h3>
 
 						<div className='flex gap-4'>
 							<p className='text-lg font-bold'>Score: </p>
