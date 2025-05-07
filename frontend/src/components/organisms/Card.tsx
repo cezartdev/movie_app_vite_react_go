@@ -1,13 +1,13 @@
+import BackToTheFuture from '../../assets/img/back_to_the_future.webp';
+
 export default function Card() {
 	return (
-		<div className='card bg-base-100 w-96 shadow-sm'>
+		<div className='card bg-base-100 w-full max-w-96 shadow-sm hover:scale-110 transition-all duration-300'>
 			<figure>
-				<img
-					src='https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp'
-					alt='Shoes'
-				/>
+				<img src={BackToTheFuture} alt='Movie' />
 			</figure>
-			<div className='card-body'>
+			<div className='absolute inset-0 bg-black opacity-70' />
+			<div className='card-body absolute'>
 				<h2 className='card-title'>
 					Card Title
 					<div className='badge badge-secondary'>NEW</div>

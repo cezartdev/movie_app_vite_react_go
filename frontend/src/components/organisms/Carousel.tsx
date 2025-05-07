@@ -6,7 +6,7 @@ import ToyStory from '../../assets/img/toy_story_4.webp';
 
 export default function Carousel() {
 	return (
-		<section className='carousel w-full h-150'>
+		<section className='carousel w-full h-[70dvh]'>
 			<div
 				id='slide1'
 				className='carousel-item relative w-full'

@@ -3,16 +3,14 @@ import Carousel from '../organisms/Carousel';
 
 export default function HomeTemplate() {
 	return (
-		<>
-			<div>
-				<Carousel />
+		<main>
+			<Carousel />
 
-				<div className='grid grid-cols-3 gap-4'>
-					<Card />
-					<Card />
-					<Card />
-				</div>
+			<div className='grid-fluid container'>
+				<Card />
+				<Card />
+				<Card />
 			</div>
-		</>
+		</main>
 	);
 }

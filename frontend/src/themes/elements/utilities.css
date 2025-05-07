@@ -1,6 +1,6 @@
 /*Container Overwritten*/
 @utility container {
-    @apply !w-[90%] mx-auto !max-w-[72rem];
+    @apply !w-[90%] mx-auto !max-w-[120rem];
 }
 
 /*Text*/
@@ -39,5 +39,5 @@
 
 /*Grid*/
 @utility grid-fluid {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-20 gap-y-20;
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-x-20 gap-y-20;
 }
