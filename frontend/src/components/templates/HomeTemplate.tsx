@@ -10,7 +10,7 @@ export default function HomeTemplate() {
 				<Card />
 				<Card />
 				<Card />
-			</div>
+			</div>1
 		</main>
 	);
 }
