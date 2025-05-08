@@ -8,36 +8,9 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/joho/godotenv"
+	MovieApp "github.com/cezartdev/vite-go"
 )
 
-type Movie struct {
-	ID   int32  `json:"id"`
-	Name string `json:"name"`
-	Description string `json:"description"`
-}
-
-func getMovies(c *fiber.Ctx) error {
-
-	movie := Movie{
-		ID:   1,
-		Name: "Avengers",
-	}
-
-	return c.Status(fiber.StatusOK).JSON(movie)
-
-}
-
-func createMovies(c *fiber.Ctx) error {
-
-	movie := Movie{}
-
-	if err := c.BodyParser(&movie); err != nil {
-		fmt.Println(err)
-	}
-
-	return c.Status(fiber.StatusOK).JSON(movie)
-
-}
 
 func main() {
 
@@ -65,7 +38,7 @@ func main() {
 
 	moviesGroupV1 := v1.Group("/movies")
 
-	moviesGroupV1.Get("/get", getMovies)
+	MovieApp.Routes(moviesGroupV1)
 
 	log.Fatal(app.Listen(":3001"))
 }
