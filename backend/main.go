@@ -3,15 +3,17 @@ package main
 import (
 	"fmt"
 	"log"
-
+	"os"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/joho/godotenv"
 )
 
 type Movie struct {
 	ID   int32  `json:"id"`
 	Name string `json:"name"`
+	Description string `json:"description"`
 }
 
 func getMovies(c *fiber.Ctx) error {
@@ -38,6 +40,12 @@ func createMovies(c *fiber.Ctx) error {
 }
 
 func main() {
+
+	err := godotenv.Load(".env.development")
+
+	if err != nil{
+		log.Fatal("Error loading .env.development file")
+	}
 
 	app := fiber.New()
 
