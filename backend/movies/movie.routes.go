@@ -7,6 +7,5 @@ import (
 func Routes(router fiber.Router) {
 
 	
-
 	router.Get("/get", GetMovies)
 }

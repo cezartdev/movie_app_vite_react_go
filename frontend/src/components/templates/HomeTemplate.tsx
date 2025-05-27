@@ -5,12 +5,12 @@ export default function HomeTemplate() {
 	return (
 		<main>
 			<Carousel />
-
 			<div className='grid-fluid container'>
 				<Card />
 				<Card />
 				<Card />
-			</div>1
+			</div>
+			1
 		</main>
 	);
 }

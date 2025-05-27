@@ -1,22 +1,19 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"os"
+	MovieApp "github.com/cezartdev/vite-go/movies"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/joho/godotenv"
-	MovieApp "github.com/cezartdev/vite-go"
+	"log"
 )
-
 
 func main() {
 
 	err := godotenv.Load(".env.development")
 
-	if err != nil{
+	if err != nil {
 		log.Fatal("Error loading .env.development file")
 	}
 
